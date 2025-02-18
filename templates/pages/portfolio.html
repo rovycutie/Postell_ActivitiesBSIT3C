@@ -1,0 +1,256 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+  <title>Portfolio</title>
+</head>
+<style>
+  #hero {
+    background-image: url("{% static 'portfolio/img/rov.jpg' %}");
+    background-size: contain;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+  }
+</style>
+<body>
+  
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>R</span>ov<span>D</span>eon<span>P</span>ostell</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Hobbies</a></li>
+            <li><a href="#projects" data-after="Projects">Activities</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Rov Deon Postell <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Hobb<span>i</span>es</h1>
+        <p>I love to express myself through dancing, singing and modelling. Performing on stage fills me with joy and energy. 
+          When I'm not in the spotlight, you can find me playing basketball on the court.</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/microphone.png?v={{ timestamp }}" /></div>
+          <h2>Dancing & Singing</h2>
+          <p>Dancing and singing with passion during the GC Foundation Day 2023, 
+             I was honored to be hailed as Mr. GGSS 2023, making the celebration even more unforgettable.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/certificate.png?v={{ timestamp }}" /></div>
+          <h2>Modelling</h2>
+          <p>Winning the title of Ginoong Tindig and proudly representing Mr. CCS in Sportsfest 2023,
+             I gave my best and was honored to be hailed as the 4th runner-up in the competition.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/trophy.png?v={{ timestamp }}" /></div>
+          <h2>Basketball</h2>
+          <p>For the past three years, I have had the honor of representing the CCS Department in basketball, 
+            dedicating countless hours to training, teamwork, and competition leading to win bronze medal.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Activities</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Activity 1</h1>
+            <h2>Mr.GGSS 2023</h2>
+            <p>During the last GC Foundation Day 2023, I was honored to be crowned Mr. GGSS 2023, 
+              showcasing my passion and talent in both dancing and singing, which truly made the event a memorable one.</p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'portfolio/img/ggss.jpg' %}" alt="img">
+
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Activity 2</h1>
+            <h2>CCS Ginoong Tindig 2023</h2>
+            <p>In 2023, I was proudly crowned CCS Ginoong Tindig, 
+              a title that allowed me to represent the CCS Department in Sportsfest 2023, where I gave my all in every challenge and competition.</p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'portfolio/img/ginoo.jpg' %}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Activity 3</h1>
+            <h2>Mr.Sportsfesr 2023 - 4th Runner Up</h2>
+            <p>As I represented the CCS Department in Mr. Sportsfest 2023, 
+              I was humbled and proud to be named 4th Runner-Up, showcasing my dedication and sportsmanship throughout the competition.</p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'portfolio/img/sf.jpg' %}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Activity 4</h1>
+            <h2>CCS Basketball 2022</h2>
+            <p>In 2022, the CCS Basketball team displayed remarkable teamwork and determination, 
+              leaving a lasting impression on every game and strengthening our pride for the department.</p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'portfolio/img/ccs1.jpg' %}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Activity 5</h1>
+            <h2>CCS Basketball 2023</h2>
+            <p>In 2023, the CCS Basketball team faced an unfortunate setback as we were disqualified from the tournament due to a fight, 
+              but we remain determined to learn from the experience and grow stronger as a team.</p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'portfolio/img/ccs2.jpg' %}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Activity 6</h1>
+            <h2>CCS Basketball 2024</h2>
+            <p>In 2024, the CCS Basketball team made a triumphant return, showcasing exceptional skill and teamwork to secure the bronze medal,
+               a proud achievement for our department.</p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'portfolio/img/ccs3.jpg' %}" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'portfolio/img/deon.jpg' %}" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>3rd Year BSIT College Student</h2>
+        <p>I am Rov Deon S. Postell, 23 years old, and I proudly live in Mabayuan, Olongapo City.
+          As I continue to work hard and stay focused on my goals, 
+          I am determined to be a successful person someday, achieving all of my dreams through perseverance, dedication, and the belief that every challenge is an opportunity for growth. With each step I take, I am one step closer to creating the future I envision for myself.
+        </p>
+        
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png?v={{ timestamp }}" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+63 918 3801100</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png?v={{ timestamp }}" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>202210703@gordoncollege.edu.ph</h2>
+            <h2>rovdeon919@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png?v={{ timestamp }}" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Mabayuan, Olongapo City Philippines</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>R</span>ov<span>D</span>eon<span>P</span>ostell</h1>
+      </div>
+      <h2>BSIT 3C</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/share/15LuecS7rh/?mibextid=wwXIfr?v={{ timestamp }}"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png?v={{ timestamp }}" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Frvdnz_%3Figsh%3DMXczdHdxeGp4c2NnZg%253D%253D%26utm_source%3Dqr&h=AT1YNqxw0fn2YqVgKMppaDSNXcZdTbNbQKDz7HuXIZ6XXfHB0cPwQb2w5H6tUBH90Pb6XMbuxz-ku25Le-RR8pmuj-9gghWeBkSjuwWkQuqMfJ2piQNkh5APkZY91ziihLkJbg?v={{ timestamp }}"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png?v={{ timestamp }}" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.tiktok.com%2F%40rov19deon%3F_t%3DZS-8u11evg62PY%26_r%3D1&h=AT1YNqxw0fn2YqVgKMppaDSNXcZdTbNbQKDz7HuXIZ6XXfHB0cPwQb2w5H6tUBH90Pb6XMbuxz-ku25Le-RR8pmuj-9gghWeBkSjuwWkQuqMfJ2piQNkh5APkZY91ziihLkJbg?v={{ timestamp }}"><img src="https://img.icons8.com/bubbles/100/000000/tiktok.png?v={{ timestamp }}" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2025 RovDeonPostell. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  {% load static %}
+  <script src="{% static 'portfolio/js/app.js' %}"></script>
+
+</body>
+
+</html>
