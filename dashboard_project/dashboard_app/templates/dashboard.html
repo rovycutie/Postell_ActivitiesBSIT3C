@@ -1,0 +1,12 @@
+{% load custom_filters %}
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Dashboard</h1>
+    {% for item in data %}
+        <div class="card">
+            <h3>{{ item.title }}</h3>
+            <p>Count: {{ item.count|format_number }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
